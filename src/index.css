@@ -1,0 +1,46 @@
+/* Model Router — Highway Yellow & Asphalt Grey */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+:root, [data-theme="light"] {
+  --color-bg-primary: #F4F4F5; --color-bg-secondary: #E4E4E7; --color-bg-tertiary: #D4D4D8;
+  --color-bg-card: #FFFFFF; --color-bg-hover: rgba(251,191,36,0.1);
+  --color-text-primary: #18181B; --color-text-secondary: #3F3F46; --color-text-tertiary: #71717A;
+  --color-text-inverse: #18181B; /* Yellow looks better with dark text */
+  --color-accent-primary: #F59E0B; --color-accent-secondary: #D97706; --color-accent-tertiary: #B45309;
+  --color-accent-soft: rgba(245,158,11,0.15);
+  --color-border: rgba(24,24,27,0.1); --color-border-strong: rgba(24,24,27,0.2);
+  --color-success: #16A34A; --color-warning: #CA8A04; --color-error: #DC2626;
+  --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  --glass-bg: rgba(255,255,255,0.85); --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+}
+[data-theme="dark"] {
+  --color-bg-primary: #18181B; --color-bg-secondary: #27272A; --color-bg-tertiary: #3F3F46;
+  --color-bg-card: #27272A; --color-bg-hover: rgba(251,191,36,0.08);
+  --color-text-primary: #F4F4F5; --color-text-secondary: #A1A1AA; --color-text-tertiary: #71717A;
+  --color-text-inverse: #18181B;
+  --color-accent-primary: #FBBF24; --color-accent-secondary: #FCD34D; --color-accent-tertiary: #F59E0B;
+  --color-accent-soft: rgba(251,191,36,0.15);
+  --color-border: rgba(244,244,245,0.08); --color-border-strong: rgba(244,244,245,0.15);
+  --glass-bg: rgba(39,39,42,0.9); --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+}
+:root {
+  --font-family: 'Roboto Condensed', sans-serif; --font-mono: 'Roboto Mono', monospace;
+  --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem; --font-size-lg: 1.125rem; --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem;
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 12px; --transition-fast: 0.2s ease; --sidebar-width: 250px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-family); background: var(--color-bg-primary); color: var(--color-text-primary); min-height: 100vh; }
+a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; text-transform: uppercase; font-weight: 700; font-size: 13px; }
+.card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--card-shadow); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-bg-card); color: var(--color-text-primary); transition: all var(--transition-fast); }
+.btn:hover { border-color: var(--color-border-strong); background: var(--color-bg-hover); }
+.btn-primary { background: var(--color-accent-primary); color: var(--color-text-inverse); border-color: var(--color-accent-primary); }
+.btn-primary:hover { background: var(--color-accent-secondary); }
+.btn-ghost { background: transparent; border: none; }
+.btn-sm { padding: var(--space-1) var(--space-3); font-size: 11px; }
+.badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 2px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge-yellow { background: var(--color-accent-primary); color: var(--color-text-inverse); }
+.badge-gray { background: var(--color-bg-tertiary); color: var(--color-text-primary); }
+.input, .select { width: 100%; padding: var(--space-2) var(--space-3); background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-sm); color: var(--color-text-primary); font-family: inherit; font-size: var(--font-size-base); }
+.input:focus, .select:focus { outline: none; border-color: var(--color-accent-primary); box-shadow: 0 0 0 2px var(--color-accent-soft); }
+.mono { font-family: var(--font-mono); }
