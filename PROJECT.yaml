@@ -1,0 +1,13 @@
+id: be655bb7-af27-44ff-9e1d-5a4ef2d5b5f2
+name: model-router
+description: React + TypeScript + Vite
+tier: prototype
+lane: oss
+priority: medium
+oss: false
+stack: [typescript, react, convex, vite]
+repo: "https://github.com/mxn2020/model-router"
+deploy_url: null
+last_active: 2026-02-24
+tags: []
+notes: 
