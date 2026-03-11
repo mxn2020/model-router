@@ -1,5 +1,6 @@
-id: be655bb7-af27-44ff-9e1d-5a4ef2d5b5f2
 name: model-router
+project_scope: main
+project_type: standalone
 description: React + TypeScript + Vite
 tier: prototype
 lane: oss
@@ -9,5 +10,6 @@ stack: [typescript, react, convex, vite]
 repo: "https://github.com/mxn2020/model-router"
 deploy_url: null
 last_active: 2026-02-24
-tags: []
-notes: 
+tags: [ai, routing, models, load-balancing, api, gateway, inference]
+notes: null
+id: be655bb7-af27-44ff-9e1d-5a4ef2d5b5f2
