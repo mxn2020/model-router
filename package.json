@@ -41,7 +41,7 @@
   },
   "description": "Intelligent LLM routing for multi-model AI applications",
   "author": "Mehdi Nabhani",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": [
     "model",
     "router",
